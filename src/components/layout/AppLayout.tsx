@@ -13,7 +13,7 @@ export function AppLayout({ children }: AppLayoutProps) {
       </main>
 
       {/* Footer */}
-      <footer className="fixed bottom-16 left-0 right-0 pb-2 pt-3 bg-gradient-to-t from-background via-background to-transparent">
+      <footer className="fixed bottom-20 left-0 right-0 pb-3 pt-2 bg-background/95 backdrop-blur-sm border-t border-border/50">
         <div className="text-center">
           <p className="text-xs text-muted-foreground">
             Built with <span className="text-red-500 animate-pulse">❤️</span> by{' '}
