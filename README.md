@@ -7,10 +7,11 @@
 ![Vite](https://img.shields.io/badge/Vite-5.4.19-purple?logo=vite)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.17-cyan?logo=tailwindcss)
 ![License](https://img.shields.io/badge/License-MIT-green)
+[![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?logo=render)](https://client-food-tracking-app.onrender.com)
 
 **A modern, mobile-first food delivery and meal tracking application**
 
-[Live Demo](#) • [Features](#-features) • [Tech Stack](#-tech-stack) • [Getting Started](#-getting-started) • [Documentation](#-documentation)
+[Live Demo](https://client-food-tracking-app.onrender.com) • [Features](#-features) • [Tech Stack](#-tech-stack) • [Getting Started](#-getting-started) • [Documentation](#-documentation)
 
 </div>
 
