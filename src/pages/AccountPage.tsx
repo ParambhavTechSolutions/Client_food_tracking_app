@@ -139,11 +139,6 @@ export default function AccountPage() {
           <LogOut className="h-5 w-5" />
           Log Out
         </Button>
-
-        {/* App Version */}
-        <p className="text-center text-xs text-muted-foreground pt-4">
-          Version 1.0.0 • Made with ❤️ for healthy living
-        </p>
       </div>
     </AppLayout>
   );
