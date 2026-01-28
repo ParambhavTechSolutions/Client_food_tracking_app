@@ -2,87 +2,116 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Health-focused, calming palette */
+    --background: 45 30% 98%;
+    --foreground: 160 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 160 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 160 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Sage Green - Primary brand color */
+    --primary: 152 35% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm Cream */
+    --secondary: 40 30% 94%;
+    --secondary-foreground: 160 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 20% 92%;
+    --muted-foreground: 160 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Soft Coral - Accent */
+    --accent: 12 75% 65%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Success Green */
+    --success: 152 55% 42%;
+    --success-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    /* Warning Amber */
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 92% 15%;
+
+    /* Info Blue */
+    --info: 210 70% 55%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 152 35% 45%;
+
+    --radius: 1rem;
+
+    /* Wallet specific */
+    --wallet-gradient-start: 152 45% 48%;
+    --wallet-gradient-end: 180 40% 38%;
+
+    /* Status colors */
+    --status-scheduled: 210 60% 55%;
+    --status-out-for-delivery: 38 85% 55%;
+    --status-delivered: 152 55% 42%;
+    --status-paused: 0 0% 60%;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(160 25% 15% / 0.05);
+    --shadow-md: 0 4px 12px -2px hsl(160 25% 15% / 0.08);
+    --shadow-lg: 0 12px 32px -8px hsl(160 25% 15% / 0.12);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 160 20% 8%;
+    --foreground: 45 30% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 160 18% 12%;
+    --card-foreground: 45 30% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 160 18% 12%;
+    --popover-foreground: 45 30% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 152 45% 55%;
+    --primary-foreground: 160 25% 10%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 160 15% 18%;
+    --secondary-foreground: 45 30% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 160 15% 20%;
+    --muted-foreground: 45 20% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 12 70% 60%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --success: 152 50% 50%;
+    --success-foreground: 160 25% 10%;
+
+    --warning: 38 85% 55%;
+    --warning-foreground: 38 92% 15%;
+
+    --border: 160 15% 22%;
+    --input: 160 15% 22%;
+    --ring: 152 45% 55%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +129,66 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer components {
+  /* Status badges */
+  .status-scheduled {
+    @apply bg-info/15 text-info;
+  }
+  
+  .status-out-for-delivery {
+    @apply bg-warning/15 text-warning;
+  }
+  
+  .status-delivered {
+    @apply bg-success/15 text-success;
+  }
+  
+  .status-paused {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  /* Card variants */
+  .card-elevated {
+    @apply bg-card rounded-2xl shadow-md border-0;
+  }
+
+  .card-subtle {
+    @apply bg-secondary/50 rounded-2xl border-0;
+  }
+
+  /* Wallet gradient */
+  .wallet-card {
+    background: linear-gradient(135deg, hsl(var(--wallet-gradient-start)), hsl(var(--wallet-gradient-end)));
+  }
+
+  /* Touch-friendly button base */
+  .touch-target {
+    @apply min-h-[48px] min-w-[48px];
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  /* Glass effect */
+  .glass {
+    @apply bg-card/80 backdrop-blur-lg;
+  }
+}
+
+@layer utilities {
+  /* Safe area padding for mobile */
+  .safe-bottom {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+
+  .safe-top {
+    padding-top: max(1rem, env(safe-area-inset-top));
   }
 }
