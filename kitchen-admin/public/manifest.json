@@ -1,0 +1,21 @@
+{
+    "name": "Cloud Kitchen",
+    "short_name": "CloudKitchen",
+    "description": "Premium healthy dining experience",
+    "start_url": "/mobile",
+    "display": "standalone",
+    "background_color": "#1F8548",
+    "theme_color": "#1F8548",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

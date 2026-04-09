@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "kitchen-admin": "cd kitchen-admin && npm install && npm run dev",
+    "kitchen-admin:dev": "cd kitchen-admin && npm run dev",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
